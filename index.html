@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>A Simple To-do</title>
+</head>
+<body class="bg-gray-700 text-zinc-100">
+    <div class="flex flex-col items-center mt-32">
+        <h1 class="text-2xl font-semibold">To-do</h1>
+    
+        <div class="flex items-center mt-4">
+            <input type="text" id="newTask" placeholder="New Task" class="bg-gray-600 p-2 w-[400px] outline-none rounded hover:bg-slate-800">
+
+            <button class="bg-slate-800 p-2 rounded-lg ml-2 hover:bg-slate-900" onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList">
+
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
